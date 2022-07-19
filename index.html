@@ -15,6 +15,7 @@
 			'Cloud',
 			'Ops',
 			'Dev',
+			'Sec',
 			'Platform',
 			'Build',
 			'Reliability',
@@ -23,7 +24,14 @@
 			'Automation',
 			'Systems',
 			'Kube',
-			'YAML'
+			'Provisioning',
+			'Jenkins',
+			'YAML',
+			'Microservice',
+			'CI',
+			'CD',
+			'Containerization',
+			'Cluster'
 		];
 
 		var end = [
@@ -43,7 +51,7 @@
 			.map(a => a.x)
 			.slice(0, 1);
 		
-		if (sample[1] === 'Ops'){
+		if (sample[1] === 'Ops' || sample[0] === 'Dev'){
 			return sample[0] + sample[1] + ' ' + suffix[0];
 		}
 		return sample[0] + ' ' + sample[1] + ' ' + suffix[0];
