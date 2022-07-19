@@ -22,7 +22,8 @@
 			'Site',
 			'Automation',
 			'Systems',
-			'Kube'
+			'Kube',
+			'YAML'
 		];
 
 		var end = [
