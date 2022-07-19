@@ -51,7 +51,7 @@
 			.map(a => a.x)
 			.slice(0, 1);
 		
-		if (sample[1] === 'Ops' || sample[0] === 'Dev'){
+		if (sample[1] === 'Ops' || sample[0] === 'Dev' || sample[1] === 'Sec'){
 			return sample[0] + sample[1] + ' ' + suffix[0];
 		}
 		return sample[0] + ' ' + sample[1] + ' ' + suffix[0];
