@@ -42,8 +42,11 @@
 			.sort((a, b) => a.r - b.r)
 			.map(a => a.x)
 			.slice(0, 1);
-
-		return sample[0] + sample[1] + ' ' + suffix[0];
+		
+		if (sample[1] === 'Ops){
+			return sample[0] + sample[1] + ' ' + suffix[0];
+		}
+		return sample[0] + " " + sample[1] + ' ' + suffix[0];
 	}
 	function changeTitle(){
 		document.getElementById('devOpsTitle').innerHTML = getName();
